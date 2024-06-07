@@ -1,0 +1,18 @@
+{
+  "name": "com-bf-cypress-template",
+  "version": "1.0.0",
+  "license": "MIT",
+  "devDependencies": {
+    "cypress": "^13.10.0",
+  },
+  "scripts": {
+    "start": "cypress open",
+    "test": "cypress run",
+    "cypress:ci": "cypress run --record --key 0f1e7b3b-0b3b-4b3b-8b3b-0b3b3b3b3b3b",
+    "cypress:verify": "cypress run --record --key 0f1e7b3b-0b3b-4b3b-8b3b-0b3b3b3b3b3b --parallel --ci-build-id $CIRCLE_WORKFLOW_ID",
+    "cypress:open:ci": "cypress run --record --key 0f1e7b3b-0b3b-4b3b-8b3b-0b3b3b3b3b3b --parallel --ci-build-id $CIRCLE_WORKFLOW_ID",
+    "cypress:run:ci": "cypress run --record --key 0f1e7b3b-0b3b-4b3b-8b3b-0b3b3b3b3b3b --parallel --ci-build-id $CIRCLE_WORKFLOW_ID",
+    "cypress:ci:circle": "cypress run --record --key 0f1e7b3b-0b3b-4b3b-8b3b-0b3b3b3b3b3b --parallel --ci-build-id $CIRCLE_WORKFLOW_ID",
+    "cypress:ci:github": "cypress run --record --key 0f1e7b3b-0b3b-4b3b-8b3b-0b3b3b3b3b3b --parallel --ci-build-id $GITHUB_RUN_ID",
+  }
+}
