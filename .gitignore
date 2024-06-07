@@ -11,3 +11,15 @@ cypress/downloads/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Idea IDE
+# IntelliJ IDEA files
+# Ignore everything in the folder .idea except .idea/externalDependencies.xml
+**/.idea/*
+!**/.idea/externalDependencies.xml
+*.iml
+*.iws
+*.ipr
+
+# SonarQube
+.scannerwork/
