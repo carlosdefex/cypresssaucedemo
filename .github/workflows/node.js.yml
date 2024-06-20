@@ -16,21 +16,21 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [16.x]
+        node-version: ['18.x', '20.x']
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
 
-      - name: Install
+      - name: Install dependencies
         run: npm install
 
       - name: Spotless/Linter check
-        run: npm run lintCheckAll
+        run: npm run lint
 
       - name: Test
         run: npm run test
