@@ -10,16 +10,6 @@ module.exports = defineConfig({
     },
     supportFile: path.resolve(__dirname, 'cypress/support/e2e.js'),
   },
-  reporter: 'mochawesome',
-  reporterOptions: {
-    reportDir: 'cypress/reports',
-    overwrite: false,
-    html: true,
-    json: true,
-  },
-  screenshotsFolder: 'cypress/screenshots',
-  videosFolder: 'cypress/videos',
-  downloadsFolder: 'cypress/downloads',
   component: {
     // Example placeholder, update as necessary for component testing
     specPattern: '**/*.cy.{js,jsx,ts,tsx}',
