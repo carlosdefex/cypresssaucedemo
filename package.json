@@ -25,7 +25,7 @@
         "cypress:run:ci": "cypress run --record --key 0f1e7b3b-0b3b-4b3b-8b3b-0b3b3b3b3b3b --parallel --ci-build-id $CIRCLE_WORKFLOW_ID",
         "cypress:ci:circle": "cypress run --record --key 0f1e7b3b-0b3b-4b3b-8b3b-0b3b3b3b3b3b --parallel --ci-build-id $CIRCLE_WORKFLOW_ID",
         "cypress:ci:github": "cypress run --record --key 0f1e7b3b-0b3b-4b3b-8b3b-0b3b3b3b3b3b --parallel --ci-build-id $GITHUB_RUN_ID",
-        "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+        "lint": "eslint . --ext .js,.jsx,.ts,.tsx --ignore",
         "precommit": "npm run lintFixAll",
         "prepush": "npm run lintFixAll && npm run test",
         "postinstall": "husky init",

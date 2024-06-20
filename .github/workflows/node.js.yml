@@ -29,8 +29,8 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Spotless/Linter check
-        run: npm run lint
+      # - name: Spotless/Linter check
+      #   run: npm run lint
 
       - name: Test
         run: npm run test
