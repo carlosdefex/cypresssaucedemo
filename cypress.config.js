@@ -8,14 +8,14 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
-    supportFile: path.resolve(__dirname, 'cypress/support/e2e.js')
+    supportFile: path.resolve(__dirname, 'cypress/support/e2e.js'),
   },
   reporter: 'mochawesome',
   reporterOptions: {
     reportDir: 'cypress/reports',
     overwrite: false,
     html: true,
-    json: true
+    json: true,
   },
   screenshotsFolder: 'cypress/screenshots',
   videosFolder: 'cypress/videos',
@@ -23,6 +23,6 @@ module.exports = defineConfig({
   component: {
     // Example placeholder, update as necessary for component testing
     specPattern: '**/*.cy.{js,jsx,ts,tsx}',
-    supportFile: path.resolve(__dirname, 'cypress/support/component.js')
-  }
+    supportFile: path.resolve(__dirname, 'cypress/support/component.js'),
+  },
 });

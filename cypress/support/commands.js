@@ -1,6 +1,9 @@
-const { INPUT_USUARIO, INPUT_PASSWORD, BTN_LOGIN } = require('../pages/LoginPage');
-const {TITLE_HOME} = require('../pages/HomePage');
-
+const {
+  INPUT_USUARIO,
+  INPUT_PASSWORD,
+  BTN_LOGIN,
+} = require('../pages/LoginPage');
+const { TITLE_HOME } = require('../pages/HomePage');
 
 Cypress.Commands.add('saucedemoLogin', (userName, password) => {
   cy.get(INPUT_USUARIO).type(userName);
@@ -9,6 +12,5 @@ Cypress.Commands.add('saucedemoLogin', (userName, password) => {
 });
 
 Cypress.Commands.add('loginSucess', () => {
-    cy.get(TITLE_HOME).should('contains.text', 'Products');
-  });
-  
+  cy.get(TITLE_HOME).should('contains.text', 'Products');
+});
